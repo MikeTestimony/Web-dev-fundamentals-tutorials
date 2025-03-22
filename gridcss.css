@@ -1,0 +1,21 @@
+body{
+  background-color: black;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.cards{
+  background-color: rgb(255, 255, 255);
+  border: 2px solid blue;
+  border-radius: 2px;
+  text-align: center;
+  color: red;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fix,300px);
+  gap: 15px;
+  justify-content: center;
+}

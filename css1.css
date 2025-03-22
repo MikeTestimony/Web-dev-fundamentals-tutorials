@@ -1,0 +1,122 @@
+/*this ia a css file*/
+#div1{
+  background-color: bisque;
+  border: 5px solid red;
+  width: 200px;
+  height: 200px;
+  
+}
+.p1{
+  color: #f90f;
+  background-color: hsl(40, 78%, 42%);
+}
+p::first-letter {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0080ff;
+}
+
+a::before {
+  content: '\1F517'; /* Add a link icon */
+  margin-right: 5px;
+}
+
+p::selection {
+  background-color: #0080ff;
+  color: #ffffff;
+}
+.parent{
+  background-color: black;
+  color: #fff;
+  width: 500px;
+  padding: 30;
+  position: relative;
+  z-index: 4;
+}
+.child{
+  background-color: blue;
+  color: white;
+  padding: 20;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+.div2{
+  padding: 30px;
+  width: 500px;
+  position: sticky;
+  top:50px;
+
+}
+
+#bt1{
+  width: 500px;
+  height: 200px;
+  transition: all;
+  color: white;
+  background-color: blue;
+}
+
+#bt1:hover{
+  background-color:rgba(80, 200, 250, 0.3);
+  transition: width 2s, height 2s, background-color 2s;
+width: 300px;
+height:100px ;
+transform: translate(200px,30px);
+
+}
+#rotate{
+  animation: rotate 2s infinite;
+
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.block{
+  background-color: #4B7CCC;
+  visibility: hiddn;
+  display: inline;
+
+}
+.span{
+  background-color: black;
+  color: white;
+  display: block;
+  
+}
+
+/* Styling of flex box */
+body{
+  display: flex;
+  min-height: 800px;
+  border: 2px solid green;
+  /* justify-content:space-evenly; */
+  align-items: center;
+  justify-content: center;
+align-content: center;
+  gap: 20px;
+  
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  flex-grow: 0;
+  
+}
+
+.box{
+
+
+display: flex;
+justify-content: center;
+align-items: center;
+  height: 100px;
+  width: 100px;
+  background-color: #4B7CCC;
+
+}

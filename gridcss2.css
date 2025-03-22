@@ -1,0 +1,112 @@
+.grid-container1{
+  display: grid;
+  grid-template-rows: repeat(4, 200px);
+  grid-template-columns: repeat(4,200px);
+  gap: 15px;
+}
+.item{
+  color: black;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#item_4{
+  /* (the 2nd parameter is the position + the number of the grid cells to occupy) */
+  grid-row: 3 /5; 
+  grid-column: 3/5;
+}
+
+
+/* grid tutorial 3 */
+.container{
+  display: grid;
+  grid-template-rows: repeat(4, 200px);
+  grid-template-columns: repeat(4,200px);
+  gap: 15px;
+  grid-template-areas: 
+  "   item1  .   .   .   .   "
+  "   .  item2  item2   item2  .   "
+  "   .   .  item3  .   .   "
+  "   .   .   .   .   .   "
+  "   .   .   .   .   .   "
+  ;
+}
+
+.item1{
+  background-color: burlywood;
+  /* grid-area: 2/3/4/4; one way of using the grid-area  */
+grid-area: item1;
+}
+
+.item2{
+  background-color: burlywood;
+grid-area: item2;
+}
+.item3{
+  background-color: burlywood;
+  grid-area: item3;
+
+}
+.item4{
+  background-color: burlywood;
+  grid-area: item4;
+
+}
+.item5{
+  background-color: burlywood;
+  grid-area: item5;
+
+}
+
+/* inline-grid */
+
+.cont{
+  display:inline-grid;
+  grid-template-rows: repeat(4, 200px);
+  grid-template-columns: repeat(auto-fill,200px);
+  gap: 15px;
+}
+
+.itm{
+  background-color: burlywood;
+}
+
+
+
+/* using media querry to make grid responsive */
+.cont2{
+  display: grid;
+  grid-template-rows: repeat(4, 200px);
+  grid-template-columns: repeat(4,200px);
+  gap: 15px;
+}
+
+.itm1{
+  background-color: burlywood; /* changing the background*/
+}
+
+
+@media (max-width: 1024px)  {
+  .cont2{grid-template-columns: repeat(auto-fill,200px);
+    background-image: url(images/MyPic.jpg);
+  gap: 15px;}
+}
+/* use media querry and auto-fill to make the grid resposive */
+/* 
+(/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {...} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...}) */ 
+
