@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML-CSS tutorials</title>
+<style>
+  /*css float property*/
+  #myPic{
+    float: right;
+    margin: 10px;
+    padding: 5px;
+  }
+    /*css overflow property*/
+
+  .container{
+    width: 700px;
+    height: 500px;
+    margin: 30px;
+    background-color: silver;
+    overflow: auto;   /*auto value*/
+
+  }
+  .container2{
+    width: 800px;
+    height: 500px;
+    margin: 30px;
+    background-color: silver;
+    overflow: scroll;/*scroll value*/
+  }
+  .container3{
+    width: 200px;
+    height: 150px;
+    margin: 30px;
+    background-color: silver;
+    overflow: hidden; /*hidden value*/
+  }
+  .container4{
+    width: 200px;
+    height: 150px;
+    margin: 30px;
+    background-color: silver;
+    overflow: visible; /*visible value*/
+  }
+</style>
+</head>
+<body>
+  <!-- floating property in css -->
+  <p style="overflow:auto">This is an example of how CSS float property works. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur illo blanditiis at quaerat sint ad pariatur asperiores debitis aut accusamus.</p>
+  <img src="images/MyPic.jpg" alt="My most recent picture" height="70rem" width="55rem" id="myPic">
+
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi asperiores aspernatur enim, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ex modi quo quibusdam aperiam, ipsam, voluptatem totam aliquam commodi veniam, saepe vel eius! Cupiditate ut assumenda ea, dolorem itaque nesciunt hic dolorum! Explicabo quos nesciunt possimus in atque similique error ipsum corporis odit et cupiditate quasi, ab officiis, tenetur ducimus. quod illo vitae optio amet quae sit eos.</p>
+
+  <h3>This is an example of overflow in css</h3>
+  <!-- The "auto" value of the overflow css property" -->
+
+  <div class="container">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat sunt placeat consectetur accusantium enim perferendis dolorum nulla reiciendis. Modi, perspiciatis suscipit soluta perferendis, ducimus vero eius distinctio, mollitia itaque at nam quasi illo! Ut molestias nam obcaecati non, nemo neque culpa sapiente et? Tempora ad quaerat, dolores dolorum obcaecati saepe?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, veniam cupiditate. Quam reiciendis porro accusantium saepe nisi fugit, voluptatum magnam dolore, culpa corporis modi expedita sit, praesentium recusandae! Vitae et odio harum quas fugiat beatae atque doloremque voluptatum, consectetur provident!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas quidem nam magni? Nam accusantium earum omnis nobis, unde sed, asperiores dicta, pariatur saepe quis odio! Corporis ipsa officia impedit, tempora sapiente ea sint aperiam magni voluptatem. Iusto, recusandae et.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste sed quae rem soluta velit eligendi animi inventore totam maxime perferendis explicabo, voluptatibus doloremque consequuntur! Nulla cum, impedit quasi maiores nihil nobis tempora, pariatur harum sunt distinctio eum unde, maxime accusantium atque tempore suscipit. Esse vero iste dolore eligendi obcaecati laudantium et quaerat est voluptas nesciunt, dolores ad adipisci voluptatem, qui assumenda porro voluptates dolor illum. Quos sequi quas libero voluptas excepturi nesciunt harum, a iure facere, molestiae perspiciatis. Nisi, sint.</p>
+
+  </div>
+  <!-- The "scroll" value of the overflow css property" -->
+  <div class="container2">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat sunt placeat consectetur accusantium enim perferendis dolorum nulla reiciendis. Modi, perspiciatis suscipit soluta perferendis, ducimus vero eius distinctio, mollitia itaque at nam quasi illo! Ut molestias nam obcaecati non, nemo neque culpa sapiente et? Tempora ad quaerat, dolores dolorum obcaecati saepe?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, veniam cupiditate. Quam reiciendis porro accusantium saepe nisi fugit, voluptatum magnam dolore, culpa corporis modi expedita sit, praesentium recusandae! Vitae et odio harum quas fugiat beatae atque doloremque voluptatum, consectetur provident!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas quidem nam magni? Nam accusantium earum omnis nobis, unde sed, asperiores dicta, pariatur saepe quis odio! Corporis ipsa officia impedit, tempora sapiente ea sint aperiam magni voluptatem. Iusto, recusandae et.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste sed quae rem soluta velit eligendi animi inventore totam maxime perferendis explicabo, voluptatibus doloremque consequuntur! Nulla cum, impedit quasi maiores nihil nobis tempora, pariatur harum sunt distinctio eum unde, maxime accusantium atque tempore suscipit. Esse vero iste dolore eligendi obcaecati laudantium et quaerat est voluptas nesciunt, dolores ad adipisci voluptatem, qui assumenda porro voluptates dolor illum. Quos sequi quas libero voluptas excepturi nesciunt harum, a iure facere, molestiae perspiciatis. Nisi, sint.</p>
+
+  </div>
+  <!-- hidding overflow content -->
+  <div class="container3">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat sunt placeat consectetur accusantium enim perferendis dolorum nulla reiciendis. Modi, perspiciatis suscipit soluta perferendis, ducimus vero eius distinctio, mollitia itaque at nam quasi illo! Ut molestias nam obcaecati non, nemo neque culpa sapiente et? Tempora ad quaerat, dolores dolorum obcaecati saepe?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, veniam cupiditate. Quam reiciendis porro accusantium saepe nisi fugit, voluptatum magnam dolore, culpa corporis modi expedita sit, praesentium recusandae! Vitae et odio harum quas fugiat beatae atque doloremque voluptatum, consectetur provident!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas quidem nam magni? Nam accusantium earum omnis nobis, unde sed, asperiores dicta, pariatur saepe quis odio! Corporis ipsa officia impedit, tempora sapiente ea sint aperiam magni voluptatem. Iusto, recusandae et.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste sed quae rem soluta velit eligendi animi inventore totam maxime perferendis explicabo, voluptatibus doloremque consequuntur! Nulla cum, impedit quasi maiores nihil nobis tempora, pariatur harum sunt distinctio eum unde, maxime accusantium atque tempore suscipit. Esse vero iste dolore eligendi obcaecati laudantium et quaerat est voluptas nesciunt, dolores ad adipisci voluptatem, qui assumenda porro voluptates dolor illum. Quos sequi quas libero voluptas excepturi nesciunt harum, a iure facere, molestiae perspiciatis. Nisi, sint.</p>
+
+  </div>
+  
+    <!-- visible overflow content -->
+    <div class="container4">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat sunt placeat consectetur accusantium enim perferendis dolorum nulla reiciendis. Modi, perspiciatis suscipit soluta perferendis, ducimus vero eius distinctio, mollitia itaque at nam quasi illo! Ut molestias nam obcaecati non, nemo neque culpa sapiente et? Tempora ad quaerat, dolores dolorum obcaecati saepe?</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, veniam cupiditate. Quam reiciendis porro accusantium saepe nisi fugit, voluptatum magnam dolore, culpa corporis modi expedita sit, praesentium recusandae! Vitae et odio harum quas fugiat beatae atque doloremque voluptatum, consectetur provident!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas quidem nam magni? Nam accusantium earum omnis nobis, unde sed, asperiores dicta, pariatur saepe quis odio! Corporis ipsa officia impedit, tempora sapiente ea sint aperiam magni voluptatem. Iusto, recusandae et.</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste sed quae rem soluta velit eligendi animi inventore totam maxime perferendis explicabo, voluptatibus doloremque consequuntur! Nulla cum, impedit quasi maiores nihil nobis tempora, pariatur harum sunt distinctio eum unde, maxime accusantium atque tempore suscipit. Esse vero iste dolore eligendi obcaecati laudantium et quaerat est voluptas nesciunt, dolores ad adipisci voluptatem, qui assumenda porro voluptates dolor illum. Quos sequi quas libero voluptas excepturi nesciunt harum, a iure facere, molestiae perspiciatis. Nisi, sint.</p>
+  
+    </div>
+  
+
+</body>
+</html>

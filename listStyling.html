@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styling list with css</title>
+<style>
+  .ul{
+    list-style-type:upper-roman;
+    list-style-position:outside;
+    /*    list-style-image: url('images/MyPic.jpg');*/
+  }
+
+  /*Styling a table in css*/
+  #customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+.container{
+  width: 200px;
+  height: auto;
+background-color: gray;
+}
+[href]{
+padding: 5px;
+}
+[href]:hover{
+  color: green;
+  font-size: medium;
+}
+.cont{
+  background-color:green;
+}
+.cont p+p{
+  background-color: white;
+}
+
+input[type=text]{
+  background-color: burlywood;
+  border: 2px solid black;
+  padding: 5px;
+  height: 30px;
+}
+input[type=text]:hover{
+  background-color: #04AA6D;
+}
+.navV{
+  background-color: wheat;
+  width: 150px;
+  list-style-type: none;
+
+}
+ .NVV{
+text-align: center;
+ }
+.NVV a{
+  display: block;
+}
+ .NVV a:hover{
+  background-color: rgb(27, 27, 230);
+  color: rgb(153, 57, 57);
+ }
+
+ .navH{
+  background-color: wheat;
+  width: 150px;
+  list-style-type: none;
+ }
+.NVH a{
+  display: inline;
+}
+.NVV a:hover{
+  background-color: #04AA6D;
+}
+
+</style>
+</head>
+<body>
+  <h1>LIST OF ITEMS NEED FOR THE WEB DEV CLASSES</h1>
+<!-- using the various css list properties to manipulate an unodered list -->
+  <ul class="ul">
+    <li>laptop: The major item needed</li>
+    <li>Internet Acess</li>
+    <li>A smartphone</li>
+  </ul>
+
+
+  <!-- css table properties -->
+   <table id="customers">
+    <tr>
+      <th>Names</th>
+      <th>Class</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Mike</td>
+      <td>CE1</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Tesimony</td>
+      <td>CE1</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>Rita</td>
+      <td>IS</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Erica</td>
+      <td>CE1</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>Kish</td>
+      <td>Cy4</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Camry</td>
+      <td>CH</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Eldad</td>
+      <td>Chem</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>Rundy</td>
+      <td>MC3</td>
+      <td>19</td>
+    </tr>
+   </table>
+
+   <!-- styling links with css -->
+  
+   <h2>REFERENCE LINKS</h2>
+   <div class="container">
+<a href="www.youtube.com">Youtube</a>
+<a href="www.facebook.com">Facebook</a>
+<a href="www.google.com">Google</a>
+   </div>
+<!-- 
+   css combinators -->
+   <div class="cont">
+    <p>First and direct child</p>
+    <div><p>Second but grand(nested) child</p>
+    <p>Child of a child of a direct child</p>
+    </div>
+    <p>Third but direct child</p>
+   </div>
+
+   <!-- css form properties -->
+    <form action="">
+      <Fieldset>
+    <legend>USER INFORMATION</legend>
+    <label for="Username">Username</label><br>
+      <input type="text" placeholder="Enter your UserName"><br>
+
+      <label for="Password">Password</label><br>
+      <input type="text" placeholder="Password"><br>
+
+      <label for="Email">Email</label><br>
+      <input type="email" placeholder="Email:"><br>
+      <label for="Reply">Feedback</label><br>
+      <input type="textarea" name="feedback" id="fb" placeholder="Enter your feedback here"><br>
+      <input type="reset"><br>
+      <input type="submit">
+    </Fieldset>
+    </form>
+
+    <!-- css properties for styling navigation bar -->
+     <h3>css properties for styling navigation bar </h3>
+     <!-- vertical navbar -->
+     <ul class="navV">
+      <li class="NVV"><a href="#">Home</a></li>
+      <li class="NVV"><a href="#">About</a></li>
+      <li class="NVV"><a href="#">Service</a></li>
+      <li class="NVV"><a href="#">Contact</a></li>
+  
+     </ul>
+
+     <!-- horinzontal navbar -->
+
+     <ul class="navH">
+      <li class="NVH"><a href="#">Home</a></li>
+      <li class="NVH"><a href="#">About</a></li>
+      <li class="NVH"><a href="#">Service</a></li>
+      <li class="NVH"><a href="#">Contact</a></li>
+  
+     </ul>
+  </body>
+</html>
